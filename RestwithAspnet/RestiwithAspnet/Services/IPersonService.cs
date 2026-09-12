@@ -1,13 +1,12 @@
-﻿using RestiwithAspnet.Model;
+using RestiwithAspnet.Model;
 
-namespace RestiwithAspnet.Services
+namespace RestiwithAspnet.Services;
+
+public interface IPersonService
 {
-    public interface IPersonService
-    {
-        Person Create(Person person);
-        Person Update(Person person);
-        void Delete(long id);
-        List<Person> FindAll();
-        Person FindByID(long id);
-    }
+    Person Create(Person person);
+    Person Update(Person person);
+    void Delete(long id);
+    List<Person> FindAll();
+    Person? FindByID(long id);
 }
